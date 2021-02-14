@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=FileManager
+comment1.params=fileName\ content
+comment1.target=void\ writeToFile(java.lang.String,\ java.lang.String)
+comment2.params=fileName
+comment2.target=java.lang.String\ readFile(java.lang.String)
+numComments=3

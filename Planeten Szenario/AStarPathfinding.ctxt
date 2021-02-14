@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=AStarPathfinding
+comment1.params=startX\ startY\ endX\ endY
+comment1.target=java.util.ArrayList\ findPath(int,\ int,\ int,\ int)
+comment2.params=list
+comment2.target=Node\ lowestF(java.util.ArrayList)
+comment3.params=a\ b
+comment3.target=int\ getDistance(Node,\ Node)
+numComments=4

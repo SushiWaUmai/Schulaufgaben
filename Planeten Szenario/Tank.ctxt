@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Tank
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Tank\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=range
+comment1.target=Tank(int)
+comment2.params=
+comment2.target=Tank()
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ Tank\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment4.params=world
+comment4.target=void\ addedToWorld(greenfoot.World)
+comment5.params=
+comment5.target=void\ shoot()
+comment6.params=rot
+comment6.target=int\ xDirFromRot(double)
+comment7.params=rot
+comment7.target=int\ yDirFromRot(double)
+comment8.params=test
+comment8.target=int\ getSign(int)
+numComments=9
