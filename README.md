@@ -1,1 +1,1 @@
-"# Pathetic-School-Code" 
+# Pathetic-School-Code" 
