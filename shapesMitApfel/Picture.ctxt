@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Picture
+comment0.text=\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Picture.\n\ \n\ @Denise\ Schmitz\ \n\ @31.01.2021\n
+comment1.params=
+comment1.target=Picture()
+comment2.params=
+comment2.target=void\ makeVisible()
+numComments=3
