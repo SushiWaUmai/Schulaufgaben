@@ -1,1 +1,1 @@
-# Schul Aufgaben
+# Schulaufgaben
