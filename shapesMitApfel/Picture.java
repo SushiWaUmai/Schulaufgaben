@@ -12,6 +12,7 @@ public class Picture
    public Picture()
    {
       sonne = new Circle();
+      sonne.moveUp();
       mond  = new Circle();
    } 
 

@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Apfel
-comment0.text=\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Apfel.\n\ \n\ @Denise\ Schmitz\n\ @04.02.2021\n
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Apfel.\r\n\ \r\n\ @Denise\ Schmitz\r\n\ @04.02.2021\r\n
 comment1.params=dm
 comment1.target=Apfel(int)
-comment1.text=\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Apfel\n
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Apfel\r\n
 comment2.params=
 comment2.target=int\ getDurchmesser()
 comment3.params=dm
