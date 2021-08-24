@@ -1,7 +1,9 @@
 import java.lang.Math;
 
 public class Wuerfel {
-    public int generiereZahl() {
-        return (int)Math.random() * 6;
+
+    // Generiert eine zahl zwischen 1 und sechs
+    public static int generiereZahl() {
+        return (int)Math.random() * 7 + 1;
     }
 }

@@ -9,7 +9,28 @@ public class Spielfigur {
         angriffswert = _angriffswert;
     }
 
+    public int berechneSchaden() {
+        return angriffswert + staerke;
+    }
+
+    public void AddiereLeben(int schaden) {
+        lebenspunkte += Wuerfel.generiereZahl() * schaden;
+
+        if(lebenspunkte <= 0){
+            Sterbe();
+        }
+    }
+
+    public void Sterbe() {
+        System.out.println(this + " ist gestorben.");
+    }
+
     public void greifeAn(Spielfigur figur) {
-        // TODO: Spater machen
+        figur.AddiereLeben(-berechneSchaden());
+        AddiereLeben(-figur.berechneSchaden());
+    }
+
+    public String toString() {
+        return this.getClass().getSimpleName();
     }
 }
