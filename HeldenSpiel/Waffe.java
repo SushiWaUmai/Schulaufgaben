@@ -1,3 +1,4 @@
+// Waffe Implementation
 public class Waffe {
     private int material;
     private int magie;

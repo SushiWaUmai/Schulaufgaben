@@ -1,3 +1,4 @@
+// Spielfigur Implementaion
 public class Spielfigur {
     private int staerke;
     private int lebenspunkte;

@@ -1,3 +1,4 @@
+// Zauberer Implementation
 public class Zauberer extends Held {
     private int heilStaerke;
 

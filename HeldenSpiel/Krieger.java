@@ -1,3 +1,4 @@
+// Das ist die Krieger Implementation
 public class Krieger extends Held {
     private int ausdauer;
 
