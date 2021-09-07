@@ -51,10 +51,10 @@ class QuickSort
     public static void main(String[] args)
     {
         int[] arr = { 7, 2, 7, 21, 7, 3, 1 };
-        System.out.println("==========");
+        System.out.println("====================");
         printArray(arr);
         quickSort(arr, 0, arr.length - 1);
-        System.out.println("==========");
+        System.out.println("====================");
         printArray(arr);
     }
 }
