@@ -1,4 +1,7 @@
-// Java implementation of iterative Binary Search 
+/** Binary Search
+ * @author Eugene Matsumura
+ * @version 1.0.0
+ */
 class BinarySearch { 
 	// Returns index of x if it is present in arr[], 
 	// else return -1 

@@ -1,6 +1,8 @@
 *.class
 *.ctxt
 
+doc
+
 # vim
 # Swap
 [._]*.s[a-v][a-z]

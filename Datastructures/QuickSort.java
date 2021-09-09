@@ -1,6 +1,10 @@
 // Java implementation of QuickSort
-import java.io.*;
  
+
+/**
+ * @author Eugene Matsumura
+ * @version 1.0.0
+ */
 class QuickSort 
 {     
     private static void swap(int[] arr, int i, int j)
