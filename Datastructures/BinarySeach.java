@@ -21,7 +21,7 @@ class BinarySearch {
 				r = m - 1; 
 		} 
 
-		// if we reach here, then element was 
+		// if re, then element was 
 		// not present 
 		return -1; 
 	} 
