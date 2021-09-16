@@ -5,7 +5,7 @@
  * @author Eugene Matsumura
  * @version 1.0.0
  */
-class QuickSort 
+public class QuickSort 
 {     
     private static void swap(int[] arr, int i, int j)
     {
