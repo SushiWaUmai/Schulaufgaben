@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=WorldSaver
-comment1.params=
-comment1.target=java.lang.String\ saveWorld()
-comment2.params=methodName
-comment2.target=void\ saveWorld(java.lang.String)
-numComments=3

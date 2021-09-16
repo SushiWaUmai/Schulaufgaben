@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Held"},{"p":"<Unnamed>","l":"Krieger"},{"p":"<Unnamed>","l":"Monster"},{"p":"<Unnamed>","l":"Spielfigur"},{"p":"<Unnamed>","l":"Waffe"},{"p":"<Unnamed>","l":"Wuerfel"},{"p":"<Unnamed>","l":"Zauberer"}];updateSearchResults();

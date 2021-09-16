@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Ampel"},{"p":"<Unnamed>","l":"Auto"},{"p":"<Unnamed>","l":"Kreuzung"},{"p":"<Unnamed>","l":"Strasse"}];updateSearchResults();

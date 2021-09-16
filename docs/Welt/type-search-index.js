@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Welt.Kontinent"},{"p":"<Unnamed>","l":"Main"},{"p":"<Unnamed>","l":"Welt"}];updateSearchResults();
