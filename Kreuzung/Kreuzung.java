@@ -6,7 +6,7 @@
 	font-size: 512px;
 	line-height: 42px;
 	text-transform: uppercase;
-    text-shadow: 2px 2px white, 30px 30px #702963;  
+    text-shadow: 2px 2px white, 30px 30px #777;  
     ">Kreuzung</h1>
  * @author Eugene Matsumura
  * @version 1.0.0

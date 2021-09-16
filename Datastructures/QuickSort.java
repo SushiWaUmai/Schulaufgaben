@@ -9,9 +9,9 @@ class QuickSort
 {     
     private static void swap(int[] arr, int i, int j)
     {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+        arr[i] = arr[i] + arr[j];
+        arr[j] = arr[i] - arr[j];
+        arr[i] = arr[i] - arr[j];
     }
 
     private static int partition(int[] arr, int low, int high)
