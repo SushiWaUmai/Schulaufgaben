@@ -1,7 +1,5 @@
 //Created by Duckulus on 17.09.2021
 
-//Created by Duckulus on 17.09.2021
-
 import java.util.Arrays;
 import java.util.Random;
 
@@ -45,4 +43,3 @@ public class InsertionSort {
 
 
 }
-
