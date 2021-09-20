@@ -1,0 +1,9 @@
+.border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px black;
+    border-radius: 25px;
+    border-style: groove;
+    border-color: cyan;
+}
