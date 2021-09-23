@@ -1,6 +1,14 @@
 # Vererbung
 
+### Abstrakte Klassen
+- Keine Objekte erstellbar
+- Bauplan für Unterklassen -> verschiedene Unterklassen, bestimmte Funktionalität garantieren
+  - abstrakte Methoden
+  - Keine fertige Implementation
+
 ### Subtyping
+- Objekte der Unterklasse finden an Stellen Verwendung, wo Objekte der Oberklasse erwartet werden.
+- Objekt bei Konstruktoren!
 ```java
 Fahrzeug f1 = new Fahrzeug();   //✔️
 Fahrzeug f2 = new Auto();       //✔️
@@ -12,6 +20,7 @@ Auto meinVIP2 = new Auto();     // Regulaer
 ```
 
 ### Typecast
+Objekte der Oberklasse werden explizit als Objekt der Unterklasse gecastet.
 
 ```java
 Fahrzeug f;
