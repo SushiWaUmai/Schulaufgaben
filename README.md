@@ -5,7 +5,7 @@ Keine Sorge!
 
 Hier findest du deine Informatik Hausaufgaben!
 
-Du kannst dir den Code oben kopieren und die [Klassendokumentation](https://sushiwaumai.github.io/Schulaufgaben/index.html) anschauen. :book:
+Du kannst dir den [Code](src) oben kopieren und die [Klassendokumentation](https://sushiwaumai.github.io/Schulaufgaben/index.html) anschauen. :book:
 
 Man kann auch die ganzen Projekte sich über das grüne Button sich runterladen.
 
