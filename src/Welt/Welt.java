@@ -1,3 +1,5 @@
+package Welt;
+
 public class Welt{
 
 	public class Kontinent{

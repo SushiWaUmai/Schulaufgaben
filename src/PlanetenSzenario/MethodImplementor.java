@@ -1,3 +1,5 @@
+package PlanetenSzenario;
+
 import java.util.*;
 
 public class MethodImplementor

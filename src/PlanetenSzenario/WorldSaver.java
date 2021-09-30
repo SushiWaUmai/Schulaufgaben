@@ -1,3 +1,5 @@
+package PlanetenSzenario;
+
 import greenfoot.*;
 import java.util.*;
 

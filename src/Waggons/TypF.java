@@ -1,5 +1,5 @@
 package Waggons;
 
-public class TypF extends Gueterwagen{
+public class TypF extends Gueterwagen {
     
 }

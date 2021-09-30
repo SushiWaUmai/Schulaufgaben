@@ -1,3 +1,5 @@
+package PlanetenSzenario;
+
 import java.io.*;
 import java.util.Scanner;
 

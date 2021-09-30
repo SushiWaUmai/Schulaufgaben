@@ -1,3 +1,5 @@
+package shapesMitApfel;
+
 import java.awt.*;
 import java.awt.geom.*;
 

@@ -5,8 +5,8 @@ public abstract class Transportwagen {
     private int gesamtGewicht;
     private String zielGebiet;
 
-    public abstract String auskunft();
+    public abstract String gibAuskunft();
 
-    private String getZielgebiet() {return zielGebiet; }
-    private void setZielgebiet(String _zielGebiet) { zielGebiet = _zielGebiet;}
+    public String getZielgebiet() {return zielGebiet; }
+    public void setZielgebiet(String _zielGebiet) { zielGebiet = _zielGebiet;}
 }

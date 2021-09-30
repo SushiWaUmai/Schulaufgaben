@@ -1,3 +1,5 @@
+package PlanetenSzenario;
+
 import java.util.ArrayList;
 import java.lang.Math;
 

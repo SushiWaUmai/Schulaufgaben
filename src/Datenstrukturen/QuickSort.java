@@ -9,9 +9,10 @@ public class QuickSort
 {     
     private static void swap(int[] arr, int i, int j)
     {
-        arr[i] = arr[i] + arr[j];
-        arr[j] = arr[i] - arr[j];
-        arr[i] = arr[i] - arr[j];
+        int tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+        printArray(arr);
     }
 
     private static int partition(int[] arr, int low, int high)
@@ -54,7 +55,7 @@ public class QuickSort
 
     public static void main(String[] args)
     {
-        int[] arr = { 7, 2, 7, 21, 7, 3, 1 };
+        int[] arr = { 23, 98, 44, 28, 12, 18, 59, 25, 72 };
         System.out.println("====================");
         printArray(arr);
         quickSort(arr, 0, arr.length - 1);

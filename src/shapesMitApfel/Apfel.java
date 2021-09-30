@@ -1,4 +1,4 @@
-
+package shapesMitApfel;
 /**
  * Beschreiben Sie hier die Klasse Apfel.
  * 

@@ -1,11 +1,11 @@
 package Waggons;
 
 /**
- * Typ K
+ * Typ K ein Flachwagen
  */
 public class Flachwagen extends Transportwagen {
     @Override
-    public String auskunft() {
+    public String gibAuskunft() {
         return "";
     }
 }

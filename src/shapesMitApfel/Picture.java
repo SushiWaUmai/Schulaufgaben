@@ -1,9 +1,10 @@
+package shapesMitApfel;
 
 /**
  * Beschreiben Sie hier die Klasse Picture.
  * 
- * @Denise Schmitz 
- * @31.01.2021
+ * @author Denise Schmitz 
+ * @since 31.01.2021
  */
 public class Picture
 {
