@@ -1,7 +1,10 @@
 package Waggons;
 
 /**
- * Typ K ein Flachwagen
+ * @author Eugene Matsumuar
+ * @version 30.09.2021
+ * 
+ * Implementation Flachwagen
  */
 public class Flachwagen extends Transportwagen {
     @Override

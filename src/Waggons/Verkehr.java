@@ -1,5 +1,11 @@
 package Waggons;
 
+/**
+ * @author Eugene Matsumura
+ * @version 30.09.2021
+ * 
+ * Implementation Verkehr
+ */
 public class Verkehr {
 
     public static void main(String[] args) {
@@ -7,10 +13,8 @@ public class Verkehr {
         simuliere2();
     }
 
+    // Simuliert Subtyping
     public static void simuliere1() {
-        // Braucht man nicht
-        System.out.println("Simuliere 1...");
-
         // Compiler Error
         // Transportwagen wagen1 = new Transportwagen();
        
@@ -22,15 +26,10 @@ public class Verkehr {
 
         // Compiler Error
         // Gueterwagen meinGW2 = new Flachwagen();
-
-        // Braucht man nicht
-        System.out.println("1 Simliert");
     }
 
+    // Simuliert Typecast
     public static void simuliere2() {
-        // Braucht man nicht
-        System.out.println("Simuliere 2...");
-
         Transportwagen tw; Gueterwagen gw1, gw2; Flachwagen fw;
         gw1 = new Gueterwagen();
         tw = gw1;
@@ -45,8 +44,5 @@ public class Verkehr {
 
         // Runtime Error
         // fw = (Flachwagen)tw;
-
-        // Braucht man nicht
-        System.out.println("1 Simliert");
     }
 }
