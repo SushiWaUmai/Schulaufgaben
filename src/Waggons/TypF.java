@@ -8,4 +8,8 @@ package Waggons;
  */
 public class TypF extends Gueterwagen {
     
+    @Override
+    public String gibAuskunft() {
+        return "TypF: " + leerGewicht + ", " + gesamtGewicht + ", " + zielGebiet + ", " + dachMaterial;
+    }
 }

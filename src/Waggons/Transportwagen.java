@@ -9,14 +9,25 @@ package Waggons;
 public abstract class Transportwagen {
 
     // Attribute
-    private int leerGewicht;
-    private int gesamtGewicht;
-    private String zielGebiet;
+    protected int leerGewicht;
+    protected int gesamtGewicht;
+    protected String zielGebiet;
 
-    // Gibt Auskunft
+    /**
+     * Gibt Auskunft 
+     * @return auskunft
+     */
     public abstract String gibAuskunft();
 
-    // 
+    /**
+     * Gibt Zielgebiet
+     * @return Zielgebiet
+     */
     public String getZielgebiet() { return zielGebiet; }
+
+    /**
+     * Setzt Zielgebiet
+     * @param _zielGebiet wert
+     */
     public void setZielgebiet(String _zielGebiet) { zielGebiet = _zielGebiet;}
 }

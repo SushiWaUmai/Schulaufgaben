@@ -8,9 +8,10 @@ package Waggons;
  * Implementation Gueterwagen 
  */
 public class Gueterwagen extends Transportwagen {
+    protected String dachMaterial;
 
-   @Override
-   public String gibAuskunft() {
-       return "";
-   } 
+    @Override
+    public String gibAuskunft() {
+        return "Gueterwagen: " + leerGewicht + ", " + gesamtGewicht + ", " + zielGebiet + ", " + dachMaterial;
+    } 
 }

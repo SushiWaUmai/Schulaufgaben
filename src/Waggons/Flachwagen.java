@@ -7,8 +7,9 @@ package Waggons;
  * Implementation Flachwagen
  */
 public class Flachwagen extends Transportwagen {
+    
     @Override
     public String gibAuskunft() {
-        return "";
+        return "Flachwagen: " + leerGewicht + ", " + gesamtGewicht + ", " + zielGebiet;
     }
 }
