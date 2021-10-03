@@ -1,4 +1,5 @@
 # Schulaufgaben :books:
+[![wakatime](https://wakatime.com/badge/user/8cc0a80a-7a1a-448c-8c5e-742ed9a33792/project/94ee75d0-ce6f-43e3-9ef5-9a82de8b8504.svg)](https://wakatime.com/badge/user/8cc0a80a-7a1a-448c-8c5e-742ed9a33792/project/94ee75d0-ce6f-43e3-9ef5-9a82de8b8504)
 
 Gar kein bock auf die Aufgaben?
 Keine Sorge!
