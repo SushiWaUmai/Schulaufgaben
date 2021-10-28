@@ -1,3 +1,5 @@
+package Kreuzung;
+
 /** Klasse Ampel zur Darstellung einer Kreuzung mit zwei Autos
  * @author Eugene Matsumura
  * @version 1.0.0

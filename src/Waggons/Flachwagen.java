@@ -1,4 +1,4 @@
- 
+package Waggons; 
 
 /**
  * @author Eugene Matsumuar

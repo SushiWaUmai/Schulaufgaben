@@ -1,5 +1,4 @@
-// Brauchst du garnicht
- 
+package Waggons; 
 
 /**
  * @author Eugene Matsumura
