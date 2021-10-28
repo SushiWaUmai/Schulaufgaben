@@ -26,6 +26,18 @@ public abstract class Transportwagen {
     public String getZielgebiet() { return zielGebiet; }
 
     /**
+     * Gibt Gesamtgewicht 
+     * @return gesamtgewicht 
+     */
+    public int getGesamtGewicht() { return gesamtGewicht; }
+
+    /**
+     * Gibt leergewicht
+     * @return leergewicht
+     */
+    public int getLeerGewicht() { return  leerGewicht; }
+
+    /**
      * Setzt Zielgebiet
      * @param _zielGebiet wert
      */
