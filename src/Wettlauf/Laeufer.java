@@ -1,23 +1,43 @@
-public class Laeufer {
-    private String name;
-    private float zeit;
-    private boolean qualifiziert;
+/** Die Klasse Laeufer zur Simulation eines Wettlaufes
+ * @author GK INfo Q1 2021/22
+ * @version 10.11.21
+ */
 
-    public Laeufer(String _name, float _zeit, boolean _qualifiziert) {
-        name = _name;
-        zeit = _zeit;
-        qualifiziert = _qualifiziert;
+public class Laeufer
+{
+    private String name;
+    private double zeit;
+    private boolean quali;
+
+    /**
+     * Konstruktor für Objekte der Klasse Laeufer
+     * @param String pName - Beim Erzeugen eines Läufers wird der Name als Parmeter übergeben.
+     */
+    public Laeufer(String pName)
+    {
+        name = pName;
+        zeit = 0;
+        quali = false;
     }
 
-    public String getName() { return name; }
-    public float getZeit() { return zeit; }
-    public boolean getQualifiziert() { return qualifiziert; }
+    // Getter und Setter
+    public double getZeit() {
+        return zeit;
+    }
 
-    public void setName(String _name) { name = _name; }
-    public void setZeit(float _zeit) { zeit = _zeit; }
-    public void setQualifiziert(boolean _qualifiziert) { qualifiziert = _qualifiziert; }
+    public void setZeit(double pZeit) {
+        zeit = pZeit;
+    }
 
-    public String toString() {
-        return "Name: " + name + "\nZeit: " + zeit + "\nQualifiziert: " + qualifiziert;
+    public String getName() {
+        return name;
+    }
+
+    public void setQuali(boolean pQuali) {
+        quali = pQuali;
+    }
+
+    public boolean getQuali() {
+        return quali;
     }
 }
