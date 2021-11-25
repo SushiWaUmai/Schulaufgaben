@@ -37,9 +37,30 @@ public class InsertionSort {
         }
     }
 
+    public static void insertionSortRecursive(int[] arr) {
+        insertionSortRecursive(arr, arr.length - 1);
+    }
+
+    public static void insertionSortRecursive(int[] arr, int i) {
+        if (i > 0) {
+            insertionSortRecursive(arr, i - 1);
+            int temp = arr[i];
+            int j = i;
+            while (j > 0 && arr[j - 1] > temp) {
+                arr[j] = arr[j - 1];
+                j--;
+            }
+            arr[j] = temp;
+        }
+    }
+
+    /**
+     * Method printArray
+     * Prints the passed array on the console
+     *
+     * @param arr The array to be printed
+     */
     public static void printArray(int[] arr) {
         System.out.println(Arrays.toString(arr));
     }
-
-
 }

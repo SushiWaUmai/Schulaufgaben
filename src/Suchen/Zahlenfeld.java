@@ -41,8 +41,7 @@ public class Zahlenfeld {
 
     public int binarySearchRecursive(int l, int r, int x)
     {
-        if (r >= l && l<arr.length-1) { 
-           
+        if (r >= l && l < arr.length - 1) { 
             int mid = l + (r - l) / 2;
             if (arr[mid] == x)
                 return mid;
