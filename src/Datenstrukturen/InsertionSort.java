@@ -1,5 +1,3 @@
-//Created by Duckulus on 17.09.2021
-
 import java.util.Arrays;
 import java.util.Random;
 
@@ -34,23 +32,6 @@ public class InsertionSort {
             }
             arr[j] = temp;
 
-        }
-    }
-
-    public static void insertionSortRecursive(int[] arr) {
-        insertionSortRecursive(arr, arr.length - 1);
-    }
-
-    public static void insertionSortRecursive(int[] arr, int i) {
-        if (i > 0) {
-            insertionSortRecursive(arr, i - 1);
-            int temp = arr[i];
-            int j = i;
-            while (j > 0 && arr[j - 1] > temp) {
-                arr[j] = arr[j - 1];
-                j--;
-            }
-            arr[j] = temp;
         }
     }
 
