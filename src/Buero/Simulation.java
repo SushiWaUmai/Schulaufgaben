@@ -5,9 +5,12 @@ public class Simulation {
         buero.hintenanstellen(new Person("Taifun"));
         buero.hintenanstellen(new Person("Robin"));
 
+        buero.einlassen();
         System.out.println(buero);
 
-        buero.sprechstundeBeenden();
+        buero.einlassen();
+        System.out.println(buero);
+
         buero.sprechstundeBeenden();
 
         System.out.println(buero);

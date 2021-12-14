@@ -1,30 +1,31 @@
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class Buero {
-
+    private Person person;
     private Queue<Person> personen;
         
     public Buero() {
-        personen = new LinkedList<Person>();
+        personen = new Queue<Person>();
     }
     
     public void hintenanstellen(Person p) {
-        personen.add(p);
+        personen.enqueue(p);
     }
     
     public void einlassen() {
+        person = personen.front();
+        personen.dequeue();
     }
     
     public void sprechstundeBeenden() {
-        personen.remove();
+        while(!personen.isEmpty()) {
+             personen.dequeue();
+        }
+        person = null;
     }
 
     public String toString() {
-        String result = "";
-        for (Person p : personen) {
-            result += p.toString() + "\n";
+        if(person == null) {
+            return "Keine Person ist drinnen";
         }
-        return result;
+        return person.toString();
     }
 }

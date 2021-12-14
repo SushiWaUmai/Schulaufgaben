@@ -5,7 +5,6 @@ public class Person {
         this.name = name;
     }
     
-    // getter
     public String getName() {
         return name;
     }
