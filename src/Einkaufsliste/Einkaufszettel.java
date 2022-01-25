@@ -37,4 +37,12 @@ public class Einkaufszettel {
             artikelListe.next();
         }
     }
+
+    public void listeAusgeben() {
+        artikelListe.toFirst();
+        while (artikelListe.getContent() != null) {
+            System.out.println(artikelListe.getContent().getName());
+            artikelListe.next();
+        }
+    }
 }
