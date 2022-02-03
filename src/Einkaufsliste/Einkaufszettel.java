@@ -1,8 +1,8 @@
 public class Einkaufszettel {
-    public List<Artikel> artikelListe;
+    public BetterList<Artikel> artikelListe;
 
     public Einkaufszettel() {
-        artikelListe = new List<Artikel>();
+        artikelListe = new BetterList<Artikel>();
     }
 
     public void einfuegen(Artikel artikel) {
@@ -10,39 +10,14 @@ public class Einkaufszettel {
     }
 
     public void entfernen(Artikel artikel) {
-        bewegeDichZu(artikel);
-        artikelListe.remove();
+        artikelListe.remove(artikel);
     }
 
     public boolean istDrauf(Artikel artikel) {
-        return finde(artikel) != null;
-    }
-
-    public Artikel finde(Artikel a) {
-        artikelListe.toFirst();
-
-        while (artikelListe.getContent() != null) {
-            Artikel artikel = artikelListe.getContent();
-            if (artikel.equals(a)) {
-                return artikel;
-            }
-            artikelListe.next();
-        }
-        return null;
-    }
-
-    private void bewegeDichZu(Artikel a) {
-        artikelListe.toFirst();
-        while (artikelListe.getContent() != a) {
-            artikelListe.next();
-        }
+        return artikelListe.find(artikel) != null;
     }
 
     public void listeAusgeben() {
-        artikelListe.toFirst();
-        while (artikelListe.getContent() != null) {
-            System.out.println(artikelListe.getContent().getName());
-            artikelListe.next();
-        }
+        System.out.println(artikelListe);
     }
 }
