@@ -1,10 +1,20 @@
 import java.util.function.Predicate;
 
 public class BetterList<T> extends List<T> {
-    
-    private void Move(T a) {
+    private void move(T a) {
         toFirst();
         while (getContent() != a) {
+            next();
+        }
+    }
+
+    private void move(int index) {
+        if(index < 0 || index > size()) {
+            throw new IndexOutOfBoundsException();
+        }
+        
+        toFirst();
+        for (int i = 0; i < index; i++) {
             next();
         }
     }
@@ -46,7 +56,7 @@ public class BetterList<T> extends List<T> {
         return null;
     }
 
-    public int getSize() {
+    public int size() {
         int result = 0;
         toFirst();
         while (getContent() != null) {
@@ -57,7 +67,7 @@ public class BetterList<T> extends List<T> {
     }
 
     public T[] toArray() {
-        T[] result = (T[]) new Object[getSize()];
+        T[] result = (T[]) new Object[size()];
         toFirst();
         int i = 0;
         while (getContent() != null) {
@@ -68,8 +78,50 @@ public class BetterList<T> extends List<T> {
         return result;
     }
 
-    public void remove(T a) {
-        Move(a);
+    public void insert(int index, T a) {
+        move(index);
+        insert(a);
+    }
+
+    public T remove(int index) {
+        move(index);
+        T result = getContent();
         remove();
+        return result;
+    }
+
+    public T remove(T a) {
+        move(a);
+        remove();
+        return a;
+    }
+
+    public void removeIf(Predicate<T> p) {
+        toFirst();
+        while (getContent() != null) {
+            T o = getContent();
+            if (p.test(o)) {
+                remove();
+                return;
+            }
+            next();
+        }
+    }
+
+    public void replace(int index, T a) {
+        move(index);
+        setContent(a);
+    }
+
+    public void replaceIf(Predicate<T> p, T a) {
+        toFirst();
+        while (getContent() != null) {
+            T o = getContent();
+            if (p.test(o)) {
+                setContent(a);
+                return;
+            }
+            next();
+        }
     }
 }
