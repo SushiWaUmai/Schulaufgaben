@@ -1,15 +1,15 @@
 #BlueJ package file
-dependency1.from=Simulation
-dependency1.to=Artikel
+dependency1.from=Einkaufszettel
+dependency1.to=BetterList
 dependency1.type=UsesDependency
-dependency2.from=Simulation
-dependency2.to=Einkaufszettel
+dependency2.from=Einkaufszettel
+dependency2.to=Artikel
 dependency2.type=UsesDependency
-dependency3.from=Einkaufszettel
-dependency3.to=BetterList
+dependency3.from=Simulation
+dependency3.to=Artikel
 dependency3.type=UsesDependency
-dependency4.from=Einkaufszettel
-dependency4.to=Artikel
+dependency4.from=Simulation
+dependency4.to=Einkaufszettel
 dependency4.type=UsesDependency
 editor.fx.0.height=725
 editor.fx.0.width=813
