@@ -12,4 +12,8 @@ public class LED {
     public void lichtAus() {
         leuchtet = false;
     }
+
+    public boolean getLeuchtet() {
+        return leuchtet;
+    }
 }

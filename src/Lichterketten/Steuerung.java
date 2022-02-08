@@ -34,7 +34,7 @@ public class Steuerung {
         }
     }
 
-    private int getAnzahlLEDs() {
+    public int getAnzahlLEDs() {
         return anzahlLEDs;
     }
 
