@@ -1,6 +1,7 @@
 public class Steuerung {
 
     private BetterList<LED> leds;
+    private int anzahlLEDs;
 
     public Steuerung() {
         leds = new BetterList<LED>();
@@ -13,6 +14,7 @@ public class Steuerung {
     }
 
     public void leuchten1NormalList() {
+        leds.toFirst();
         while(leds.getContent() != null) {
             leds.getContent().lichtAn();
             leds.next();
@@ -20,6 +22,7 @@ public class Steuerung {
     }
 
     public void leuchten2() {
+        leds.toFirst();
         for (int i = 0; i < leds.size(); i++) {
             if (i % 2 == 0) {
                 leds.get(i).lichtAn();
@@ -42,6 +45,7 @@ public class Steuerung {
     }
 
     public void leuchten3() {
+        leds.toFirst();
         for (int i = 0; i < leds.size(); i++) {
             if (i % 3 == 0) {
                 leds.get(i).lichtAn();
@@ -63,7 +67,18 @@ public class Steuerung {
         }
     }
 
-    public void lichterketteAnhaengen(List<LED> leds) {
+    public void lichterketteAnhaengen(BetterList<LED> leds) {
         this.leds.concat(leds);
+        anzahlLEDs += leds.size();
+    }
+
+    public void lichterketteAnhaengenNormalList(List<LED> leds) {
+        this.leds.concat(leds);
+        int i = 0; 
+        while (leds.getContent() != null) {
+            leds.next();
+            i++;
+        }
+        anzahlLEDs += i;
     }
 }
