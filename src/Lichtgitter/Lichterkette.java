@@ -65,9 +65,12 @@ public class Lichterkette {
         }
     }
 
+    public void addLED(LED l) {
+        leds.append(l);
+    }
+
     public void lichterketteAnhaengen(BetterList<LED> leds) {
         this.leds.concat(leds);
-        anzahlLEDs += leds.size();
     }
 
     public void lichterketteAnhaengenNormalList(List<LED> leds) {
@@ -77,6 +80,23 @@ public class Lichterkette {
             leds.next();
             i++;
         }
-        anzahlLEDs += i;
+    }
+
+    public String toString() {
+        String s = "";
+        for (int i = 0; i < leds.size(); i++) {
+            s += leds.get(i).toString();
+        }
+        return s;
+    }
+    
+    public String toStringNormalList() {
+        String s = "";
+        leds.toFirst();
+        while(leds.getContent() != null) {
+            s += leds.getContent().toString();
+            leds.next();
+        }
+        return s;
     }
 }

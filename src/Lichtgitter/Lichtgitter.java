@@ -50,5 +50,14 @@ public class Lichtgitter {
             kette.next();
         }
     }
+
+    public String toString() {
+        String s = "";
+        for(int i = 0; i < kette.size(); i++) {
+            s += kette.get(i).toString();
+            s += "\n";
+        }
+        return s;
+    }
 }
 

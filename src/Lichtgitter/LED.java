@@ -16,4 +16,8 @@ public class LED {
     public boolean getLeuchtet() {
         return leuchtet;
     }
+
+    public String toString() {
+        return leuchtet ? "1" : "0";
+    }
 }
