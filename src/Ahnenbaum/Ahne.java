@@ -16,4 +16,8 @@ public class Ahne {
         this.geschlecht = geschlecht;
         this.geburtsjahr = geburtsjahr;
     }
+
+    public String toString() {
+        return "Ahne: " + geschlecht + " " + geburtsjahr;
+    }
 }

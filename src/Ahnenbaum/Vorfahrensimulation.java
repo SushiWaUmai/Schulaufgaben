@@ -1,6 +1,4 @@
 /**
- * Beschreiben Sie hier die Klasse Vorfahrensimulation.
- * 
  * @author Eugene Matsumura
  * @version 24.03.2022
  *          Klasse Vorfahrensimulation
