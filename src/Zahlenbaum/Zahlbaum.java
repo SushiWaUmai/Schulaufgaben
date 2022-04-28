@@ -1,3 +1,5 @@
+import java.util.*;
+
 /**
  * Beschreiben Sie hier die Klasse Zahlbaum: LB S. 194
  *
@@ -18,15 +20,38 @@ public class Zahlbaum {
   }
 
   public BinaryTree<Integer> erschaffeBaum2() {
-    // BinaryTree<Integer> bl0 = new BinaryTree<Integer>(?);
-    // BinaryTree<Integer> bl1 = new BinaryTree<Integer>(?);
-    // BinaryTree<Integer> ik2 = new BinaryTree<Integer>(?, bl?, bl?);
-    // BinaryTree<Integer> ik3 = new BinaryTree<Integer>(?, ik?, ?);
-    // BinaryTree<Integer> bl4 = new BinaryTree<Integer>(?);
-    // BinaryTree<Integer> ik5 = new BinaryTree<Integer>(?, b?, ?);
-    // BinaryTree<Integer> w6 = new BinaryTree<Integer>(?, ik?,ik?);
-    // return w?;
-    return null;
+    return fromOrder(
+      new int[] { 1, 2, 4, 3, 5, 6, 7 },
+      new int[] { 4, 2, 1, 6, 5, 7, 3 }
+    );
+  }
+
+  public BinaryTree<Integer> fromOrder(int[] pre, int[] in) {
+    if (pre.length == 0) {
+      return null;
+    }
+
+    int rootIndex = 0;
+    for (int i = 0; i < in.length; i++) {
+      if (in[i] == pre[0]) {
+        rootIndex = i;
+        break;
+      }
+    }
+
+    int[] leftIn = Arrays.copyOfRange(in, 0, rootIndex);
+    int[] leftPre = Arrays.copyOfRange(pre, 1, rootIndex + 1);
+
+    int[] rightIn = Arrays.copyOfRange(in, rootIndex + 1, in.length);
+    int[] rightPre = Arrays.copyOfRange(pre, rootIndex + 1, pre.length);
+
+    BinaryTree<Integer> root = new BinaryTree<Integer>(
+      pre[0],
+      fromOrder(leftPre, leftIn),
+      fromOrder(rightPre, rightIn)
+    );
+
+    return root;
   }
 
   public BinaryTree<Integer> erschaffeBaum() {
@@ -154,5 +179,5 @@ public class Zahlbaum {
     System.out.println("Anzahl der Knoten im Baum: " + anzNode);
   }
   // Diese Methode nimmt einen BinaryTree als parameter, durchlaeuft den Baum
-    // und gibt die Knoten auf der Konsole aus.
+  // und gibt die Knoten auf der Konsole aus.
 }
